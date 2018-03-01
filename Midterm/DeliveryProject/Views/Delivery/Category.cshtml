@@ -1,0 +1,28 @@
+@using System.Linq
+@using DataLibrary.Models
+
+@model List<Category>
+@using System.Collections.Generic
+<table class="table">
+    <thead>
+     <tr>
+       <th> ID  </th>
+       <th> Type  </th>
+       <th>Weight</th>
+        <th>Price</th>
+        <th>Category</th>
+     </tr>
+    </thead>
+    <tbody>
+    @foreach(var item in Model)
+    {
+        <tr>
+            <td> @item.ID </td>
+            <td> @item.Type </td>
+            <td>@item.Weight</td>
+            <td>@item.Price</td>
+            <td>@item.Level</td>
+        </tr>
+    }
+    </tbody>
+</table> 
